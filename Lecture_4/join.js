@@ -1,6 +1,9 @@
 function join(array, separator) {
-  
-  return(array.join(' '))
+  let str = array[0];
+  for (let i = 1; i < array.length; i++){
+  	str += separator + array[i];
+  }
+  return str;
 }
 
 

@@ -1,5 +1,11 @@
 function some(array, callbackFn) {
-  return(array.some(callbackFn))
+  let check = false; 
+  for (i = 0; i < array.length; i++){
+  	if(callbackFn(array[i])){
+  		return chek = true;
+  	}
+  }
+  return check;
 }
 
 function callbackFn(item, index, array) {

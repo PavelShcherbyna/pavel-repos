@@ -1,5 +1,11 @@
 function every(array, callbackFn) {
-  return (array.every(callbackFn))
+  let check = true; 
+  for (i = 0; i < array.length; i++){
+  	if(!callbackFn(array[i])){
+  		return chek = false;
+  	}
+  }
+  return check;
 }
 
 function callbackFn(item, index, array) {
